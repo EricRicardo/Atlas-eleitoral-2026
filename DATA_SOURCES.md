@@ -41,3 +41,7 @@ Fontes consultadas:
 A composição é uma projeção para 2027. Cheila Moreira, Alex Diniz e Luís Felipe Cunha têm assunção prevista após a saída dos titulares; não são apresentados como já em exercício em outubro de 2026. Luís Felipe Cunha é registrado no PL conforme a notícia mais recente da Agência Senado. Romário aparece em opção Sem partido. Mandatos de 2022 terminam em 31/01/2031. Retratos e bases municipais não disponíveis para os novos registros são omitidos, sem inventar votos ou coordenadas eleitorais. Presidência usa âncora institucional em Brasília e permanece visível ao filtrar UF.
 
 Validação: sintaxe JavaScript; IDs únicos; 27 governadores e 27 vices; 81 senadores, três por UF. Sem auditoria judicial individual; a situação de candidaturas sub judice e novas filiações pode alterar a projeção.
+
+## Retratos oficiais — 29/10/2026
+
+Foram incorporadas fotos para os 41 representantes da atualização: 24 retratos do Senado Federal, 14 candidaturas do TSE de 2026 e três suplentes do TSE de 2022. Correspondência exata por código parlamentar ou SQ_CANDIDATO, conferida com os arquivos de candidatura. As imagens são armazenadas no próprio JSON, em JPEG reduzido, sem depender de servidores externos para carregar. Cada cartão identifica e vincula a fonte da foto. Verificação: decodificação dos 41 JPEGs e inspeção visual conjunta; testes de carregamento e cartões de seis opções partidárias.
