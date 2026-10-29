@@ -25,3 +25,19 @@ Conservação exata dos votos por município, zona, UF e cargo; comparação do 
 ## Execução
 
 A aplicação é estática e não exige instalação: `dist/` contém HTML, CSS, JavaScript, fotos e dados compactados. As fontes CSV brutas não são publicadas nem guardadas neste repositório. Os scripts em `pipeline/` registram o processamento executado; seus caminhos de trabalho precisam ser ajustados para uma nova execução. A malha de entrada é a mesma do atlas anterior. TSE: licença CC BY; Leaflet: BSD-2-Clause.
+
+## Atualização de 29/10/2026
+
+`data/continuity.json` complementa os arquivos compactados sem alterar votos para deputados. Acrescenta os 12 integrantes das chapas vencedoras do segundo turno, presidente e vice-presidente e 27 mandatos de 2022, totalizando 81 cadeiras do Senado (três por UF). As pendências de segundo turno da base original deixam de ser exibidas.
+
+Fontes consultadas:
+- Agência Senado, resultados estaduais e vices: https://www12.senado.leg.br/noticias/materias/2026/10/25/definidos-governadores-em-5-estados-e-no-df-eleito-no-am-omar-deixa-senado
+- Agência Senado, composição e substituições: https://www12.senado.leg.br/noticias/materias/2026/10/25/fim-da-eleicao-define-composicao-do-senado-em-2027-com-13-partidos
+- Agência Senado, 27 mandatos em continuidade: https://www12.senado.leg.br/noticias/materias/2026/09/10/eleicoes-2026-quem-fica-quem-sai-e-quem-concorre-ao-senado
+- TSE, resultado presidencial: https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026
+- TRE-SP, identificação do vice: https://www.tre-sp.jus.br/comunicacao/noticias/2026/Outubro/eleicoes-2026-lula-e-reeleito-presidente-da-republica-confira-resultado-do-2o-turno-em-sp
+- Votos estaduais absolutos (exceto TO): https://mapadaseleicoes.com.br/2o-turno/ . Para TO usa-se apenas o percentual de 64,53% da Agência Senado, diante de divergência entre fontes.
+
+A composição é uma projeção para 2027. Cheila Moreira, Alex Diniz e Luís Felipe Cunha têm assunção prevista após a saída dos titulares; não são apresentados como já em exercício em outubro de 2026. Luís Felipe Cunha é registrado no PL conforme a notícia mais recente da Agência Senado. Romário aparece em opção Sem partido. Mandatos de 2022 terminam em 31/01/2031. Retratos e bases municipais não disponíveis para os novos registros são omitidos, sem inventar votos ou coordenadas eleitorais. Presidência usa âncora institucional em Brasília e permanece visível ao filtrar UF.
+
+Validação: sintaxe JavaScript; IDs únicos; 27 governadores e 27 vices; 81 senadores, três por UF. Sem auditoria judicial individual; a situação de candidaturas sub judice e novas filiações pode alterar a projeção.
